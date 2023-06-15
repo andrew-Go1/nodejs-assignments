@@ -17,7 +17,7 @@ Assignment contains several nested folders inside `src`. Your task is to impleme
 
 ## Subtasks
 
-### File system (src/fs)
+### :heavy_check_mark: File system (src/fs)
 
 You should implement several functions in dedicated files
 - `create.js` - implement function that creates new file `fresh.txt` with content `I am fresh and young` inside of the `files` folder (if file already exists `Error` with message `FS operation failed` must be thrown)
@@ -27,26 +27,26 @@ You should implement several functions in dedicated files
 - `list.js` - implement function that prints all array of filenames from `files` folder into console (if `files` folder doesn't exists `Error` with message `FS operation failed` must be thrown)
 - `read.js` - implement function that prints content of the `fileToRead.txt` into console (if there's no file `fileToRead.txt` `Error` with message `FS operation failed` must be thrown)
 
-### Command line interface(src/cli)
+### :heavy_check_mark: Command line interface(src/cli)
 
 You should implement several functions in dedicated files
 
 - `env.js` - implement function that parses environment variables with prefix `RSS_` and prints them to the console in the format `RSS_name1=value1; RSS_name2=value2`
 - `args.js` - implement function that parses command line arguments (given in format `--propName value --prop2Name value2`, you don't need to validate it) and prints them to the console in the format `propName is value, prop2Name is value2`
 
-### Modules(src/modules)
+### :x: Modules(src/modules)
 
 You should refactor file (you can add additional imports if needed)
 
 - `cjsToEsm.cjs` - rewrite it to it's equivalent in ECMAScript notation (and rename it to `esm.mjs`)
 
-### Hash (src/hash)
+### :heavy_check_mark: Hash (src/hash)
 
 You should implement several functions in dedicated files
 
 - `calcHash.js` - implement function that calculates SHA256 hash for file `fileToCalculateHashFor.txt` and logs it into console as `hex`
 
-### Streams (src/streams)
+### :heavy_check_mark: Streams (src/streams)
 
 You should implement several functions in dedicated files
 
@@ -54,14 +54,14 @@ You should implement several functions in dedicated files
 - `write.js` - implement function that writes `process.stdin` data into file `fileToWrite.txt` content using Writable Stream
 - `transform.js` - implement function that reads data from `process.stdin`, reverses text using Transform Stream and then writes it into `process.stdout`
 
-### Zlib (src/zip)
+###  :white_check_mark: Zlib (src/zip)
 
 You should implement several functions in dedicated files
 
 - `compress.js` - implement function that compresses file `fileToCompress.txt` to `archive.gz` using `zlib` and Streams API
 - `decompress.js` - implement function that decompresses `archive.gz` back to the `fileToCompress.txt` with same content as before compression using `zlib` and Streams API
 
-### Worker Threads (src/wt)
+###  :white_check_mark: Worker Threads (src/wt)
 
 You should implement several functions in dedicated files
 
@@ -72,7 +72,7 @@ You should implement several functions in dedicated files
 
 The results in the array must be in the same order that the workers were created
 
-### Child Processes (src/cp)
+###  :white_check_mark: Child Processes (src/cp)
 
 You should implement several functions in dedicated files
 
